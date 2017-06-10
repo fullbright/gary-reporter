@@ -79,10 +79,6 @@ class EmailNotification(object):
         self.logger.debug("Status: %s" % (request.status_code))
         self.logger.debug("Body:   %s" % (request.text))
 
-        #print 'Status: ', request.status_code
-        #print 'Status: {0}'.format(request.status_code)
-        #print 'Body:  ', request.text
-        #print 'Body:   {0}'.format(request.text)
         return request.text
 
 

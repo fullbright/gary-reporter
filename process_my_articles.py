@@ -4,6 +4,7 @@ import os
 import email_notify
 import logging
 import logging.handlers
+import socket
 
 logger = logging.getLogger('garyreporter')
 logger.setLevel(logging.DEBUG)
@@ -82,7 +83,8 @@ try:
             "msg": "Hola mundo",
             "found_error": found_error,
             "articles_count": articles_count,
-            "data_origin": data_origin
+            "data_origin": data_origin,
+            "server": socket.gethostname()
         }
     }]
 
