@@ -84,6 +84,10 @@ else
 	echo "---------- STARTING GARY'S JOB ------------------"
     echo "-------------------------------------------------"
 	echo ""
+    echo "Loading virtual environment"
+    . venv/bin/activate
+
+    echo "Starting the reporter job"
     garys_result=$(python process_my_articles.py)
     echo "Gary's report results : $garys_result"
 
