@@ -1,11 +1,11 @@
 from pocket import Pocket, PocketException
-import simplejson
+import json
 
-j = simplejson.loads("config.json")
+j = json.loads(open("config.json").read())
 
 p = Pocket(
-    consumer_key=j['consumer_key'] #'67605-7d07d07daa10f7fb8dbe2b50',
-    access_token=j['access_token'] #'15cc0e47-3178-44aa-99dd-9d27a7'
+    consumer_key=j['consumer_key'],
+    access_token=j['access_token']
 )
 
 # Fetch a list of articles

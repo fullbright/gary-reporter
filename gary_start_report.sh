@@ -96,7 +96,7 @@ else
 	echo "-------------- STATS COLLECTION -----------------"
     echo "-------------------------------------------------"
 	echo "Disc space status"
-    df -ah
+    #df -ah
 
 	echo "Anyways, let's delete the lock file to be able to execute the script again ... on the next call"
 	echo Removing the lock file
