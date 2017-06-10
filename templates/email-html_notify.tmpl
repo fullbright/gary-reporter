@@ -1,0 +1,25 @@
+{% extends "email-html_base.tmpl" %}
+
+{% block content %}
+    
+    <p>
+        {{ msg }}
+    
+        <div>Found errors: <strong>{{ found_error }}</strong></div>
+        <div>Data origin: <strong>{{ data_origin }}</strong></div>
+        <div>Articles count: <strong>{{ articles_count }}</strong></div>
+    </p>
+    <p>
+      <b>AFFECTED INSTANCES:</b>
+    </p>
+    <table class='noborder'>
+      <tr>
+	<th>UUID</th><th>IP Address</th><th>Host</th>
+      </tr>
+      {% for instance in instances -%}
+        <tr>
+          <td>{{ instance.id }}</td><td>{{ instance.accessIPv4 }}</td><td>{{ instance.name }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+{% endblock %}
