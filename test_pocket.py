@@ -3,8 +3,8 @@ import pytest
 from pocket import Pocket, PocketException
 
 
-_consumer_key = 'test_consumer_key'
-_access_token = 'test_access_token'
+_consumer_key = '67605-7d07d07daa10f7fb8dbe2b50'
+_access_token = '15cc0e47-3178-44aa-99dd-9d27a7'
 _pocket = None
 
 
