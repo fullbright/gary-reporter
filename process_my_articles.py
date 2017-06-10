@@ -73,18 +73,19 @@ try:
 
     # Notify my master
     notifier = email_notify.EmailNotification("mailgun.bright-softwares.com", "Gary Reporter", "mailgun@mailgun.bright-softwares.com", logger=logger)
+    hostname = socket.gethostname()
 
     email_data = [{
         "email": "sergio@afanou.com",
         "name": "Sergio Bro",
-        "subject": "Hi",
+        "subject": "(%s) Gary reporter has done his job" % hostname,
         "data" : {
             "dear": "master",
             "msg": "Hola mundo",
             "found_error": found_error,
             "articles_count": articles_count,
             "data_origin": data_origin,
-            "server": socket.gethostname()
+            "server": hostname
         }
     }]
 
