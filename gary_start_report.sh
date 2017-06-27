@@ -31,6 +31,10 @@ elif [ $LOCAL = $BASE ]; then
     echo "Need to pull. Pulling ..."
     git pull --rebase
     echo "Done."
+    echo "Activate the virtual env"
+    . venv/bin/activate 
+    echo "Installing new requirements"
+    pip install -r requirements.txt
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
 else
