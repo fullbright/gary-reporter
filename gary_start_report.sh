@@ -32,7 +32,7 @@ elif [ $LOCAL = $BASE ]; then
     git pull --rebase
     echo "Done."
     echo "Activate the virtual env"
-    . venv/bin/activate 
+    . venv/bin/activate
     echo "Installing new requirements"
     pip install -r requirements.txt
 elif [ $REMOTE = $BASE ]; then
