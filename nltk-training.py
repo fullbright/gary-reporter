@@ -70,6 +70,12 @@ def tag_speech(text):
 	for word in tokenized_text:
 		words = word_tokenize(word)
 		tagged = nltk.pos_tag(words)
-		print(tagged)
+
+		chunckGram = r"""Chunk: {<RB.?>*<VB.?>*<NNP><NN>?}"""
+		chunkParser = nltk.RegexpParser(chunckGram)
+		chunked = chunkParser.parse(tagged)
+
+
+		print(chunked)
 
 extract_relations(sentences4)
