@@ -64,8 +64,10 @@ def stemmer(text_tockenized):
 	return stemmed_words
 
 def tag_speech(text):
-	custom_sent_tokenizer = PunktSentenceTokenizer(train_text)
-	tokenized_text = custom_sent_tokenizer.tokenize(sample_text)
+	# custom_sent_tokenizer = PunktSentenceTokenizer(train_text)
+	custom_sent_tokenizer = PunktSentenceTokenizer(text)
+	# tokenized_text = custom_sent_tokenizer.tokenize(sample_text)
+	tokenized_text = custom_sent_tokenizer.tokenize(text)
 
 	for word in tokenized_text:
 		words = word_tokenize(word)
