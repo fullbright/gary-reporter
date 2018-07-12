@@ -2,3 +2,5 @@ requests==2.9.1
 simplejson
 jinja2
 nltk
+BeautifulSoup
+feedparser
