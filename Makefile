@@ -5,4 +5,12 @@ install:
 	pip install -r requirements.txt
 	python -c "import nltk; nltk.download('stopwords'); nltk.download('gutenberg'); nltk.download('state_union'); nltk.download('averaged_perceptron_tagger')"
 	python -c "import nltk; nltk.download('punkt');"
+
+init:
+    pip install -r requirements.txt
+
+test:
+    py.test tests
+
+.PHONY: init test
 	

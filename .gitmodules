@@ -1,6 +1,0 @@
-[submodule "bible_databases"]
-	path = bible_databases
-	url = https://github.com/scrollmapper/bible_databases.git
-[submodule "bible_corpus"]
-	path = bible_corpus
-	url = https://github.com/christos-c/bible-corpus.git

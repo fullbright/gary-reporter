@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OpenStack notification</title>
+    <style type="text/css">
+      span.bold {font-weight: bold;}
+      table.noborder {border: 0px; padding: 8px;}
+      th {text-align: left;}
+    </style>
+  </head>
+  <body>
+    <p>
+      Dear {{ dear }},
+    </p>
+
+{% block content %}
+{% endblock %}
+
+    <p>
+      Regards, <br />
+      <br />
+      The Platform Engineering OpenStack support team
+    </p>
+    <p>
+      -- <br />
+      This email has been sent to the email address associated with your OpenStack login.
+      They only relate to events that may affect your OpenStack resources. If you
+      receive multiple copies of this email, it may be due to the fact that you
+      are a member of multiple projects.
+    </p>
+  </body>
+</html>

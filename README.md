@@ -1,6 +1,24 @@
 # gary-reporter
 Gary is my favourite reporter. He grabs all the information I need from all the necessary places.
 
+# Needed sub modules
+
+Bible databases
+
+https://github.com/scrollmapper/bible_databases.git
+
+
+Bible Corpus
+
+https://github.com/christos-c/bible-corpus.git
+
+
+Geograpy
+
+https://github.com/ushahidi/geograpy
+
+
+
 # Next todo
 
 [ ] Extract information from Bible corpus
