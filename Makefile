@@ -1,4 +1,5 @@
 #!/bin/bash
+SHELL := /bin/bash
 
 install:
 	sudo apt-get install python-virtualenv python-pip -y
@@ -7,7 +8,7 @@ install:
 	python -c "import nltk; nltk.download('punkt');"
 
 venv:
-	if [ -d ".venv" ]; then echo "Load virtual env"; source .venv/bin/activate; fi
+	source .venv/bin/activate
 
 init:
 	pip install -r requirements.txt
