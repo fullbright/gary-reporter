@@ -27,3 +27,4 @@ https://github.com/ushahidi/geograpy
 [ ] Create a templated document to generate from any research query
 [ ] Send the exported document via email.
 [ ] Automate installation in docker
+DGraph Youtube video, a concurrent of Cayley: https://www.youtube.com/watch?v=cHXbYLNa0qQ
