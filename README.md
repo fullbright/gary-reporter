@@ -22,9 +22,10 @@ https://github.com/ushahidi/geograpy
 # Next todo
 
 [ ] Extract information from Bible corpus
+[ ] Generate and publish a pdf version of the bible using LaTeX from [this repository](https://github.com/vermiculus/bible/blob/master/bible.cls)
 [ ] Format the extracted information to be injected in a templated document
 [ ] Add jinja2 template to generate a document from the results
 [ ] Create a templated document to generate from any research query
 [ ] Send the exported document via email.
 [ ] Automate installation in docker
-DGraph Youtube video, a concurrent of Cayley: https://www.youtube.com/watch?v=cHXbYLNa0qQ
+[ ] Examine DGraph Youtube video, a concurrent of Cayley: [video link here](https://www.youtube.com/watch?v=cHXbYLNa0qQ)
