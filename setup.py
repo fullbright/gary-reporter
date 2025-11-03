@@ -21,9 +21,9 @@ setup(
     install_requires=[
         'requests',
     ],
-    test_requires=[
-        'pytest'
-        'flake8==2.4.1'
+    tests_require=[
+        'pytest',
+        'flake8==2.4.1',
         'responses==0.5.0'
     ]
 )

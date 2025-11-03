@@ -2,7 +2,7 @@ requests==2.28.1
 simplejson
 jinja2
 nltk
-BeautifulSoup
+beautifulsoup4
 feedparser
 geograpy
 flask-restful
